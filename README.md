@@ -1,2 +1,2 @@
 # PKU-first-course
-计算概论A上部
+计算概论A上部--coursera的课程
