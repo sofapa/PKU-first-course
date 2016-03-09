@@ -5,5 +5,9 @@ using namespace std;
 int main(){
 
 cout << "Hello World" << endl;
+
+cout << "I like Microsoft." << endl;
+
+cout << "C Shape is very Strong." << endl;
 return 0;
 }
