@@ -9,5 +9,7 @@ cout << "Hello World" << endl;
 cout << "I like Microsoft." << endl;
 
 cout << "C Shape is very Strong." << endl;
+
+cout << "coursera นามห " << endl;
 return 0;
 }
