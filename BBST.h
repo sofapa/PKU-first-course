@@ -12,9 +12,9 @@ public:
 
 };
 
-template <class Type> class BST;//Ç°ÖÃÉùÃ÷
+template <class Type> class BST;//å‰ç½®å£°æ˜
 template <class Type>
-class BstNode//Ê÷½Úµã
+class BstNode//æ ‘èŠ‚ç‚¹
 {
     friend class BST<Type>;
 //private:
@@ -64,23 +64,23 @@ template<class Type>
 Boolean BST<Type>::Insert(const Element<Type> &x)
 {
     BstNode<Type> *p = root;
-    BstNode<Type> *q = 0;//qÖ¸ÏòpµÄ¸¸½áµã
-    //insert Ö®Ç°ÒªÏÈ²éÕÒ
+    BstNode<Type> *q = 0;//qæŒ‡å‘pçš„çˆ¶ç»“ç‚¹
+    //insert ä¹‹å‰è¦å…ˆæŸ¥æ‰¾
     while(p)
     {
         q = p;
-        if(x.key == p-> data.key) return FALSE;//·¢ÉúÖØ¸´
+        if(x.key == p-> data.key) return FALSE;//å‘ç”Ÿé‡å¤
         if(x.key < p-> data.key) p = p->LeftChild;
         else
         if(x.key > p-> data.key) p = p->RightChild;
     }
 
-    //ÕÒµ½µÄÎ»ÖÃÊÇq
+    //æ‰¾åˆ°çš„ä½ç½®æ˜¯q
     p = new BstNode<Type>;
     p->LeftChild = p->RightChild = 0;
     p->data = x;
 
-    //p½Óµ½qÉÏ
+    //pæ¥åˆ°qä¸Š
     if(!root) root = p;
     else if(x.key < q->data.key) q->LeftChild = p;
     else q->RightChild = p;
@@ -94,7 +94,7 @@ BstNode<Type>* BST<Type>::Search(const Element<Type> &x)
     return Search(root,x);
 }
 
-/*
+template <class Type>
 BstNode<Type>* BST<Type>::Search(BstNode<Type>*b, const Element<Type> &x)
 {
     if(!b) return 0;
@@ -102,7 +102,7 @@ BstNode<Type>* BST<Type>::Search(BstNode<Type>*b, const Element<Type> &x)
     if(x.key < b->data.key) return Search(b->LeftChild,x);
     return Search(b->RightChild,x);
 
-}*/
+}
 
 template<class Type>
 BstNode<Type>* BST<Type>::IterSearch(const Element<Type> &x)
