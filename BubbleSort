@@ -1,0 +1,84 @@
+起泡排序（bubbleSort)
+
+起泡->改进->再改进。
+
+
+原始的起泡排序算法：
+
+#include <stdio.h>
+
+void swap(int &x, int &y)
+{
+	int t = x;
+	x = y;
+	y = t;
+}
+
+int main()
+{
+	int num[30] = { 5, 3, 2, 6, 7, 0, 1, 8, 9, 4,
+					18, 17, 19, 12, 15, 13, 14, 16, 11, 10 };
+	int lo = 0, hi = 20;
+	
+
+	for (int i = 0; i < hi; i++)
+	{
+		for (int j = 1; j <  hi; j++)
+		{
+			if (num[j - 1] > num[j])
+			{
+				swap(num[j - 1], num[j]);
+			}
+		}
+
+	}
+
+	for (int i = 0; i < hi;i++)
+		printf("%d ", num[i]);
+	
+	//getchar();
+	return 0;
+}
+
+
+
+
+改进后的算法（加入提前结束标志sorted）：
+
+
+#include <stdio.h>
+
+void swap(int &x, int &y)
+{
+	int t = x;
+	x = y;
+	y = t;
+}
+
+// 改进算法
+int main()
+{
+	int num[30] = { 5, 3, 2, 6, 7, 0, 1, 8, 9, 4,
+					18, 17, 19, 12, 15, 13, 14, 16, 11, 10 };
+	int lo = 0, hi = 20;
+	
+	for (int i = 0; i < hi; i++)
+	{
+		int sorted = 1;
+		for (int j = 1; j <  k; j++)
+		{
+			if (num[j - 1] > num[j])
+			{
+				swap(num[j - 1], num[j]);
+				sorted = 0;
+			}
+		}
+		if (sorted == 1) break; // 如果没有要交换的序列，则排序结束
+	}
+
+	for (int i = 0; i < hi;i++)
+		printf("%d ", num[i]);
+	
+	//getchar();
+	return 0;
+}
