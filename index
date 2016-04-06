@@ -8,3 +8,40 @@
 	<h2>Hello, Web!</h2>
 </body>
 </html>
+
+
+
+
+----------------------------learning meat----------------------
+<!DOCTYPE 	html>
+<html>
+<head>
+	<title>localhost:HomePage</title>
+	<meta charset = "utf-8" />
+</head>
+<body>
+	<h2>Title:Hello, Web!</h2>
+	
+	<a href="iisstart.htm" >localhost:startpage</a>
+	<hr>
+	<h4>h4:
+	<p style="font-weight:bolder">heiti</p>
+	<p style="font-style:italic">xieti</p>
+	<p style="text-decoration:underline">underline</p>
+	</h4>
+	<hr>
+	<p>
+		This is a progh,<em>this WORD</em>. &lt;em&gt; <strong>STRONG</strong> souround by &lt;strong&gt;
+	</p>
+	<p>
+	</p>
+	<p><address ><strong>Washington.D.C</strong></address> is an address
+	</p>
+	<hr/><h2 style="background-color = FF0000;">text-align:</h2>
+	<h1 style="text-align:left;">LEFT</h1>
+	<h1 style="text-align:right;">RIGHT</h1>
+	<h1 style="text-align:center;">CENTER</h1>
+	<h1 style="text-align:justify;">JUSTIFY && TWO</h1>
+	<hr/>
+</body>
+</html>
