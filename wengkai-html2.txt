@@ -1,0 +1,204 @@
+<html>
+<meta charset=utf-8>
+<head>
+	<title>第三章 表格。列表。和框模型</title>
+</head>
+<body>
+	<br>
+	<br>-----------------------------<br>3.1列表<br>-----------------------------<br>
+
+	<br>ul /ul 项目 li /li （ul表示不用数字表示。而用圆点）
+	<p>
+		此列表包括：
+		<ul>
+			<li>first</li>
+			<li>second</li>
+			<li>third</li>
+		</ul>
+	</p>
+
+	ol /ol (表示数字)
+	<br>此列表包括：
+		<ol>
+			<li>first</li>
+			<li>second</li>
+			<li>third</li>
+		</ol>
+	<br>可以加属性 start = xx
+	<br>
+		<dl>dl(解释性)
+			<dt>dt(名词)</dt>
+			<dd>dd(解释，自动缩进)</dd>
+		</dl>/dl
+	
+
+	<br>-----------------------------<br>
+	3.1列表的样式
+	<br>-----------------------------<br>
+	<br>ul可以加的属性style="list-style-type:square/circle/disc"
+	<br>可以自己定义
+	<br>style="list-style-image:url(Star.png)"
+	<br>style="list-style-position:inside/outside"(太长了要圈到第二行in 左对齐。outside与第一行齐)
+	<br>可以叠加 style="list-style: circle outisde"
+	<ul style="list-style-type:square">
+		<li>数据结构与算法</li>
+		<li>计算机组成原理</li>
+		<li>操作系统</li>
+		<li>网络应用</li>
+	</ul>
+
+	<br>-----------------------------<br>
+	3.2图片
+	<br>-----------------------------<br>
+	<br>(img "/img" width= "50%" / 200  height alt = "xxx">
+	<br>alt装载过程，给人看的内容
+	<br>网络装载
+	<br>src ="netsite url"
+	<br>支持的格式:jpg gif png
+	<br><img src="0000001.jpg" width = 200 /img>
+
+
+	<br>-----------------------------<br>
+	3.2 iframe
+	<br>-----------------------------<br>
+	<br>iframe src= " " > /iframe
+	<br><iframe src ="http://mail.qq.com" height = 600 width = 800></iframe>
+
+
+
+	<br>-----------------------------<br>
+	3.3链接
+	<br>-----------------------------<br>
+	<br>a href="http://" /a  不带就打开当前目录下的另一个网页
+	<br> target =_blank 打开新标签
+	<br><a href = "http://www.baidu.com">打开百度</a>
+	<br>页面内链接 /p id = "here"/ p h1 h2也可以放id
+	<br>href="#here"也可以到达另一个页面的指定位置
+	<br>图片定位链接：
+	<br>usemap = "#map"
+	<p><img src="0000001.jpg" width=100 height=100 usemap="#map" />
+		<map name="map">
+		<area shape ="rect" coords = "0,0,50,50" href="http://t.qq.com" alt="weibo" />
+		<area shape ="circle" coords= "75,75,25" href="http://mi.com" alt="home"/>
+		</map>
+	</p>
+	<br>-----------------------------<br>
+	3.4表格
+	<br>-----------------------------<br>
+	<br>tabble border(格子线) tr(行) th(表头) td(列) caption表格名称
+	<br>td colspan="3"(合并单元格)
+	<br>thead /thead 头， 会留在 上面
+	<br>thead tbody tfoot(做大的表格才有用)
+	<p>
+		<table border= 5px>
+			<caption>表格名称</caption>
+			<tr>
+				<th>样式</th>
+				<th>样式2</th>
+				<th>样式3</th>
+			</tr>
+			<tr>
+				<td>AAA</td>
+				<td>BBB</td>
+				<td>CCC</td>
+			</tr>
+		</table>
+	</p>
+
+	<br>表格的样式：
+	<br>style="border:1px solid blue" (宽度，样式，颜色)
+	<br>border-collapse:collapse(使不出现双行边框)
+	<br>每个单元格可以独立设置格式
+	<br>文字位置对齐vertical-align:top(垂直方向) text-align:right(水平方向)
+	<br>caption-side=bottom;(表头在表格下方)
+	<br>table-layout:automatic/fixed 全部读取后，自动算宽，高/由第一行决定
+	<br>padding:10px(离边的距离)
+	<table style="border:1px solid blue; border-collapse:collapse">
+		<caption>成绩</caption>
+		<tr>
+			<th style="border:1px solid blue ;width:50px;height:100px;vertical-align:top;text-align:right;padding:10px">chinese</th>
+			<th style="border:1px solid blue">math</th>
+			<th style="border:1px solid blue">physic</th>
+			<th style="border:1px solid blue">chemical</th>
+		</tr>
+
+		<tr>
+			<td style="border:1px solid blue">89</td>
+			<td style="border:1px solid blue">95</td>
+			<td style="border:1px solid blue">70</td>
+			<td style="border:1px solid blue">80</td>
+		</tr>
+
+
+	</table>
+
+
+
+	<br>-----------------------------<br>
+	3.5框模型
+	<br>-----------------------------<br>
+	<br>块：
+	<br>CSS定位
+	<br>div -> p -> span
+	<br>侧边条。/固定信息/头/栏
+	<br>HTML5表达常用分区side article head foot
+	<br>只是预先取了名字的div
+	<br>由外向内：margin(两个段连接的设置，与周围连接的)->border->padding内边距->background->内容
+	<br>padding:top right bottom left
+	<br>padding-top:10px
+	<br>margin(外边距)
+	<br>外边距取两者之间最大
+
+	<p style="margin:10px 50px 50px 10px">
+		第一段
+	</p>
+
+	<p style="margin:10px 50px 50px 10px">
+		第二段
+	</p>
+
+	<p style="position:relative; left:-40px; bottom:-20px">
+		第三段
+	</p>
+
+
+	<br>定位：
+	<br>浮动的概念
+	<br>普通流。浮动。绝对定位
+	<br>选框static relative absolute fixed
+	<br>不在乎margin的定义，限制
+	<br>absolute拿走。后面的补上。定位到浏览器的绝对定位
+	<br>style="float:left/right/none"浮动。锁定在浏览器的边缘
+
+
+	<br>-----------------------------<br>
+	3.6样式选择(样式选择器)
+	<br>-----------------------------<br>
+	<br>分组。类的选择器.属性选择器
+	<br>opacity 透明度
+	<!-- 4564-->
+
+	<pre>
+head
+	style
+		p,th,td{border: 1px solid blue}
+		p{background-color:red}
+		*.important {color:green}
+		/p class="important warning"/    都要遵守
+		# id
+		. class
+
+
+		*[title] {color:red} 有title这个属性。他们的样式是颜色红
+		p 空格em{background:green}          (p里面的em才改背景)
+		p > em 紧挨的才执行
+		h + p 紧临的--相临的 兄弟选择器
+		伪类{a:visited {color:#FF0000}
+		a:link
+		a:hover
+		a:active}
+
+		<a href="http://"></a>
+		</pre>
+</body>
+</html>

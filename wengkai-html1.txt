@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8>
+<title>..网页标题--my first page..</title>
+
+	<style>
+	样式
+	</style>
+</head>
+
+
+<body style="background-color:lightgray">
+	<br>-----------------------------<br>HTML基础标记<br>-----------------------------<br>
+//（组外）<hgroup>
+（标题组的已经开始了，并且已经另起一行）
+<h1>（h1开始）标题会自动占一行 可以有6级标题(h1结束)</h1> 
+<h2>连续的第2段 这个是2级标题</h2>
+//(组的结束)
+</hgroup>
+（标题组结束,在组外）
+<p>
+haha（这是一段）p1 p表示这是一段 html（表达结构）只说这是什么。css（层叠样式表）说这个是怎样的  HTML表达结构，CSS表示样式。<br>html给了你内容或者结构，css给你形象。<br>
+样式和内容/结构是分离的。
+</p>
+段后文字标识。已经在/p后面了<br>-----------------------<br>
+html
+body
+h1 这是我们的第一个页面。 /h1
+<p> 这是第一段的文字。  是在两个p之间  
+	<br>this is zhengwen
+	<br>断行.br不空行(诗歌) p前后空行
+	
+	<br>加粗可以用b，英文比较明显 <b>修饰</b><br>(表示b) 
+	<br> br是换行
+	<br><i>分离</i><br>(斜的，标记是i)(可以嵌套)
+
+	<br><tt>表达样式abcdefghijklmnopqrstuvwxyz</tt><br>(等宽的西文字体。打印字体。标识tt)
+	<br><small>表达结构</small><br>(字体变小small)<br>
+	
+
+	<del>del表示我要删除的</del><br>(标记是del)<br>
+	<ins>ins表示要新加的</ins><br>(标记是ins)<br>
+	a<sup>2</sup>+b<sub>0</sub> <br>sup sub 上下标（可以嵌套）<br>
+	还有一种已经不用的标记。加下划线用的<br>（标记是u）<br>
+	<s>s不被提倡使用。过时的，并不是被删除的</s><br>(标记是s)<br>
+	<mark>你的选择，我的泪水。</mark><br>(特别强调mark)(高亮的，标记是mark)<br>
+	<em>表示强调，重要</em><br>(标记是em)<br>
+	<strong>表示强调，着重</strong><br>(标记是strong)<br>
+	<dfn>definition定义</dfn><br>(标记是dfn)<br>
+	<code>code代码</code><br>(标记是code)<br>
+	<samp>samp例子代码</samp><br>(标记是samp)<br>
+	<kbd>用户输入</kbr><br>(标记是kbd)<br>
+	<var>variable变量</var><br>(标记是var)<br>
+	<cite>引用</cite><br>(标记是cite)<br>
+	<br>其他格式<br>
+	<address>地址</address><br>(标记是address)<br>
+	<blockquote>大缩进（好像是8个字符）</blockquote><br>(标记是blockquote)<br>
+	<q>q是一种小引用</q><br>(标记是q)<br>
+	<pre>pre是一种保留原格式的
+	123</pre><br>(标记是pre)<br>
+</p>
+
+<br>-----------------------------<br>css 背景样式<br>-----------------------------<br>
+	设置背景颜色
+	<br>body style="background-color:gray"
+	<br> 默认是透明(transparent)
+	<br> RGB
+	<br> #FF0000==RRGGBB
+	<br> rgb(255,255,0)
+	<br> rgba(255,255,0) a表示透明度
+	<br><br>body style="background-image:url(hands.jpg)"
+	<br>同目录下的图片
+	<br>段落可以放图片
+	<br>background-repeat:no-repeat/repeat x/repeat y不重复，x方向重复，y方向重复
+	<br>background-position:centre/top/right/top right/空格分开/100px 100px
+	<br>不想跟随文字滚动
+	<br>background-attachment(附加的):fixed固定/scroll滚动(默认)
+
+	<br><br>顺序 style="<strong>background:color,image,repeat,attachment,position</strong>"
+
+	<br>-----------------------------<br>css 文字样式<br>-----------------------------<br>
+	颜色，间距，对齐，装饰，缩进
+	<br>style="color:red"
+	<br>text-indent: 2em 缩进(当前字体的倍数)/百分比(整个页面)/inch/mm/cm/px/pt(1/72 inch)/注意负数的表示
+	<br>padding：2em 内边距 word 悬挂缩进
+
+	<br><br>间距与对齐<br><br>
+	<br>line-height:2em(行间距)
+	<br>text-align:left/right/centre/justify(对齐) 两端对齐
+	<br>word-spacing:30px(空格所占空间)
+	<br>letter-spacing:30px(每个字符之间)
+	<br>文字修饰与空格处理
+	<br>text-transform:uppercase(都变成大写)/lowercase/capitalize(首字母)/
+	<br>text-decoration(画线):underline/overline/line-through(3种线:上下中)/闪烁
+	<br>white-space(空格5种):normal;pre(不自动圈绕);pre-wrap(保留空格和圈绕);nowrap(不换行只有br才换行)/pre-line(合并空白保留换行)/wrap
+	<br>direction(文字书写方向):ltr/rtl
+	<br><br>字体<br><br>
+	<br>font-family(大类):eg:hei  Times,TimesNR,serif<br>serif(多数英文字体，矢量，有粗细，不是点阵.上下有出现)<br>/sans-serif(没有突出)<br>/monospace(等宽)<br>/cursive(像手写体)<br>/fantasy(特殊字符)
+	<br><br>字体修饰<br><br>
+	<br>font-style:normal/obique/italic(斜体)
+	<br>font-variant:small-caps;小的大写字母
+	<br>font-weight:bold/900/100/700(粗细)
+	<br>font-size:0.4 em /2 em/10px/(推荐用em)
+	<br><br>文字效果<br><br>
+	<br>text-shadow(阴影):3px 5px 5px grey 延伸x,y方向个点 范围扩散 颜色 用逗号可以组合
+	<br>0px -1px 0px #000000,0px 1px 3px #606060 ;color:#606060 (内陷)
+	<br>outline-color:red;outline-style:solid/dotted/dashed/double/groove3D凹槽轮廓/ridge3D凸槽轮廓/inset3D凹边轮廓/outset3D凸边轮廓;outline-width:thin/10/(边框) 颜色 线形 宽度
+	
+	<br>
+	<br>-----------------------------<br>HTML属性<br>-----------------------------<br>
+	<br><br>2.4 HTML属性<br><br>
+	<hr>hr(1条线)也和br一样。没有结束的标记。
+	<br>还可以加入一些东西 hr width = 50(像素)/ 50%(页面宽度)
+	<br>align = left/right
+	<br>现在可以不加引号
+	<br>size = 10(变粗了)
+	<br>"abbr title =<abbr title = "要隐藏的字">显示的字</abbr> /abbr" 浮云
+	<br> title=
+	<br> bdo dir=rtl /bdo "从右向左排(right to left)"
+	<br> 可以在bdo 中间 加bdi 显示正常
+
+
+	<br><br>转义字符<br><br>
+	<br>a<2的正确标记
+	<br>a& l t 分号 表示小于
+	<br>& g t 分号 表示大于
+	<br>& a m p 分号 表示&
+	<br>& n b s p 分号(不可打断的空格)
+	<br>-------------
+	<br>& u u m l 分号表示<font-size:26 pt><b>&uuml;</b></font>
+	<br>& U U m l 分号表示<font-size:16 pt><b>&Uuml;</b></front>
+<br><h3 style="text-align:center">夜晚的信号 Night Signals</h3>
+<br>
+<br>原著：Cynthia Wall/KA7ITT
+<br>
+<br>ARRL 1993年版
+<br>
+<br>翻译：BA5AG 翁凯
+<br>
+<p style="color:red;text-align:center">第一章 毕业舞会以后</p>
+5月13日星期六，半夜 
+
+<p style="text-indent: 2em;white-space:wrap">“夜晚好像永远也不会结束，”Kim斜躺在墙边的柳条椅里轻轻地叹息了一声。舞厅被装饰成南方庄园的风格，暗绿色和白色的皱纹纸带缠绕在闪烁的水晶灯上，把原本柔和的灯光，幻化成点点星光，在橡木地板上跳动。大多数情侣正紧紧地相拥着随音乐摇摆，仿佛害怕高中毕业晚会的最后时光就要消逝在历史里。
+Kim又叹了一口气，喝了一大口玻璃杯里的冰镇薄荷酒。什么夜晚嘛！她和Jeff最多就跳了四曲。Kim所有聊天的努力都失败了，这会儿Jeff又找了个借口溜了出去。Kim没有戴表，不过估计他已经溜出去至少半个小时了。他能去哪儿呢？Kim既生气又觉得很难堪：他如果要这个样子对我又何必苦苦哀求我来参加呢。  </p>
+<pre>
+终于，Kim看见他从连接着乡村高尔夫俱乐部的走廊那里的玻璃门里出来，漫不经心地踱过来坐在她身边。 
+
+“还要喝点什么么？”Jeff装得很平静地问，就好像把舞伴孤零零地扔在舞会上是很天经地义的事。 
+
+“我只想知道你去哪儿了,”Kim答道。 
+
+“噢，我刚才只是想出去走走，这地方又闷又热。”Jeff说。 
+
+Kim很平静地问：“Jeff，我做错什么了么？我们几乎就没怎么跳舞你就跑了出去把我一个人留在这里。” 
+
+Jeff似乎对她的问题很惊讶，“噢，不是的，Kim，你很好。我想我只是对跳舞没什么兴趣。老实对你说，我没打算来这个舞会的。但是我妈妈说我必须来，她说我如果不来就会错过一次美好的经历。当然我也希望我们俩能有一段美好的时光。” 
+
+他说这话显得好无辜似的，Kim简直都要笑出来了。没办法了，没办法避免这个夜晚成为一场灾难。 
+
+“噢，是吗，”她说，“我正幸福着呢。” 
+
+他没发现她声音里的讽刺，其实，他甚至看上去似乎对她的事情挺健忘的。出乎Kim意料的，Jeff邀请他跳最后一支曲。当舞曲最终结束的时候，他看上去心情还不错。Kim环顾舞厅四周，她的好朋友Andrea正站在Tim的怀里，头靠着Tim的肩膀。没人挪动一步离开舞池，只有Jeff。 
+
+“好吧，我想我们该走了，”他高兴地说。“你要来块Pizza还是什么别的？” 
+
+“不要了，”Kim轻轻地说，“我想我们最好是回家去。” 
+
+他们开车回家，一路上什么也没说，就简单地说了一下暑假打工的计划和秋天进大学的事情。Jeff把他的1970年款的Mustang停在Kim家的门前。Kim等了一小会儿，心想他恐怕不会愿意下车来。 
+
+不过他还是下车了，他下车来转到Kim一边为她开了车门，就像一个绅士该做的那样。Kim生气地想，“肯定是他妈妈说了必须要这样做！”他们走向门口，一个字也没说。Kim悄悄地用钥匙开了前门的锁，把门开了一小条缝儿，然后转向Jeff，“好吧，我想是该说晚安的时候了。”Jeff点点头，靠过来在Kim的脸颊上飞快地嘬了一下。Kim说了声“bye”，转身进了门。 
+
+一个多么不浪漫的夜晚的多么不浪漫的结束！Kim在走廊冰冷的白桦木护墙板上靠了一会儿。她蹑手蹑脚走进厨房打开冰箱。冰箱里幽暗的灯光投射在她粉色的晚装上，使得丝绸的料子显得愈发地可爱。“就像一支棉花糖”，两个礼拜前她和她妈妈一起挑选这套衣服的时候这样说过。她取下衣服上已经开始发蔫的康乃馨，仔细地放回冰箱上面的架子里，就在腊肠和芥末中间。 
+
+“这些就像我今晚的约会一样”，Kim嘟囔着关上了门。“就象芥末腊肠三明治一样地无趣！好吧，都是你的错，”她一边轻轻走向卧室一边轻轻教育着自己，“你想去参加毕业舞会，而没有人邀请你去。你就以为随便拉个人去也比不去要好。” 
+
+在乡村俱乐部的水晶舞厅里的其他情侣们都很快乐，而她和Jeff整晚上找不到共同的话题，小心地跳舞永远隔着一只手的距离。Kim真不知道为什么当初Jeff打电话给她的时候会答应。她对他的唯一了解就是见过一面—一个高个深色头发的男孩，在“美国政府”课上坐在她前面两排的座位上。但是她答应了，而且在接下来的两个星期里一直幻想着将有如何浪漫的一个舞会。现在她知道了：无聊。她尝试了无数的话题—关于他自己的事情和他的兴趣爱好，他所有的回答都是单音节的。他甚至不喜欢跳舞。他最喜欢的就是溜出去走走！ 
+
+“Kim，亲爱的，你回来了么？”她妈妈开了卧室的灯, Kim不自主地缩了一下。 
+
+“嗯，我回来了，妈妈。”Kim尽量装作镇定地说，她觉得眼泪都要出来了。 
+
+“哦，怎么样？”妈妈坐在了她的床边，看来像要好好地聊一聊。 
+
+“嗯，没事。妈妈，我真的累了，我们明天早上再谈好么？” 
+
+但是母女俩人这么多年了，Kim很难骗到妈妈。“不好么，亲爱的？”妈妈同情地问。 
+
+“哦，妈妈。”Kim呜咽着，坐起来靠着妈妈，让妈妈的手臂环绕着自己的肩膀。“什么事情也没发生，而我却对这次舞会这么期望。我试图让他开心，我真的。但是对他来说我甚至都是不存在的。” 
+
+她们谈了有半小时，Kim的妈妈和她道了晚安。Kim小心地把晚装脱下来用塑料袋装好挂起来，换上棉睡衣轻手轻脚地去浴室刷牙。
+
+“你是一个美女，”她对着镜子里泪痕未干自己的脸说。她取下了发夹和发带，让齐肩的长发自然地飘下来。 
+
+“你知道，Kim，”她对着自己的镜像说，“事实上，你没那么糟糕。这不是世界的末日，还会有其他的约会，其他的舞会……不过再也没有毕业舞会了，”她说着说着，声音又呜咽起来了。 
+
+Kim关了浴室的灯，轻轻走回卧室。她走向对着床的窗边，望着星光闪烁的夜空，倒到了床上，而眼睛还盯着星星。 
+
+“在这个世界上，”她对自己说，“也会有人与我有着相同的感受—总会有人关心我而我也关心他—会有个地方，会有个人……”
+</pre>
+	<h2 align = "center"><font face ="方正舒体">欢迎访问我的主页</font></h2>
+	<p align="center">
+	<font color = "#FF0000" size="5">welcome to my homepage</font>
+</body>
+</html>
