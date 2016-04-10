@@ -42,10 +42,157 @@
 	<h1 style="text-align:left;">LEFT</h1>
 	<h1 style="text-align:right;">RIGHT</h1>
 	<h1 style="text-align:center;">CENTER</h1>
-	<h1 style="text-align:justify;">JUSTIFY && TWO  很多浏览器不支持</h1>
+	<h1 style="text-align:justify;">JUSTIFY && TWO</h1>
 	<hr/>
-	<p> "<div>"</p>
+	<p> "div>/ p>   的区别
+	<br>div标记符用于为文档分节，在不设置任何样式的情况下，浏览器会在新行中显示 div中的内容"
+	<br> p 带有“文章中的自然段” 的语义。
+	<br> div没有特殊语义主要给文章分块，便于设置样式或者方便使用JavaScript去整体地访问它。</p>
+	<hr><h4>span标记</h4>
+	<p>块的“打包”为整体</p>
+	<p>国际货币基金组织总裁
+	<span style="color: red;font-weight:bolder">拉加德</span>
+	在麻省理工学院表示，目前美元是主导货币，未来可能不一样。 人民币加入IMF
+	储备货币篮子，说明人们认识到—— 
+	<span style="color:royalblue;font-style:italic;font-weight:bolder">
+	如果有更多国际储备货币，这个世界可能会更好。
+	</span>
+	</p>
+	<hr><h2>列表</h2><p>有序列表（ol）Ordered list与无序列表（ul）Unordered list
+	<br>无序列表也称强调式列表：前面有特殊项目符号。<br>列表项（list item）使用li>定义</p>
+	<h2>ordered list</h2>
+	<ol>
+		<li>List item 1</li>
+		<li>List item 2</li>
+		<li>List item 3</li>
+	</ol>
 	
-	
+	<h2>unordered list</h2>
+	<ul style="font-weight:bolder">
+		<li style="list-style-type:disc">List item 1style="list-style-type:disc"</li>
+		<li style="list-style-type:square">List item 2 style="list-style-type:square"</li>
+		<li>List item 3</li>
+		<li>List item 4</li>
+		<li>List item 5</li>
+	</ul>
+	<ul style="list-style-type:circle">
+		<li>牛奶</li>
+		<li>茶</li>
+		<li>咖啡</li>
+		<li>style : circle</li>
+	</ul>
+	<hr>
+	<p>描述性列表： dl dt dd<br>可以用于编写术语表、字典等内容</p>
+	<h2>Description List</h2>
+	<dl>
+		<dt> HTTP</dt>
+		<dd> Interenet basic communite protel,most fashion version is 1.1;</dd>
+		<dt> HTML</dt>
+		<dd> is a langague,used in design Web Page</dd>
+	</dl>
+	<hr>
+	<h2>常用的文本相关标记汇总</h2>
+		<div>
+			<h3>块元素标记</h3>
+			<ul>
+				<li>h?</li>
+				<li>p</li>
+				<li>pre</li>
+				<li>address</li>
+				<li style="color:red">blockquote（字面意思引用）</li>
+			
+			</ul>
+		</div>
+		Here comes a long quotation:
+
+		<blockquote>
+		This is a long quotation. This is a long quotation. This is a long quotation. This is a long quotation. This is a long quotation.
+		</blockquote>
+
+请注意，浏览器在 blockquote 元素前后添加了换行，并增加了外边距。
+		<div>
+			<h3>行内元素标记</h3>
+			<ul>
+				<li>em</li>
+				<li>strong</li>
+				<li style="color: red;font-weight:bolder">sub</li>
+				<li style="color: red;font-weight:bolder">sup</li>
+				<li>上下标签，用于公式</li>
+				
+			</ul>
+		</div>
+		<div>
+			<h3>换行标记</h3>
+			<ul>
+				<li>br</li>
+			</ul>
+		</div>
+		<div>
+			<h3>通用元素标记</h3>
+			<ul>
+				<li>div</li>
+				<li>span</li>
+			</ul>
+		</div>
+		<div>
+			<h3>列表标记</h3>
+			<ul>
+				<li>ul</li>
+				<li>ol</li>
+				<li>li</li>
+			</ul>
+			<h3 style="color: red;font-weight:bolder">红色的没有介绍</h3>
+		</div>
+		<hr>
+		创建超链接<p> a标记符创建链接<br>href="url"<br>target="_blank"新窗口打开</p>
+		<a href="http://www.baidu.com">打开百度，获取更多</a><a href="iisstart.htm">信息</a>
+		<hr><h2>锚点（anchor）</h2>在超链接中指向该锚点。
+		<p> a name='xxx' 给元素定义<span style="color:red ;font-weight:bolder">id</span><br>a href='#锚点名称'
+		<br><span style="font-style:italic">a href='URL#链接中的锚点'</span> 用来跳到特定页面的指定锚点位置。
+		<br>a href = 'xxx.zip' 用来下载文件 
+		<br><span><a href="http://baike.so.com/doc/1062163-1123665.html" target="_blank">术语：MIME映射</a></span>
+		</p>
+		<hr>
+		<h2>img标记插入图象</h2>
+		<p>使用 img src ="/xxx/xx/***.jpg" width= "800" height="600" alt= "图片的文本说明"</p>
+		<h3>在web页上变成绘制位图基于HTML5</h3>
+		<a href="http://bomomo.com" target="_blank">bomomo.com</a>
+		<br><a href="http://codepen.io/soulwire/pen/Ffvlo" target="_blank">黑白图</a>
+		<h2 style="color:#D15A3D;">课后作业：体会技术之美</h2>
+		<!-- 209 90 61 --><!-- 1235-->
+		<ol>
+			<li>访问d3js.org网站，看看使用SVG做出来的具有高度交互式功能的Web网页</li>
+			<li>使用搜索引擎搜索HTML5Canvas实例，看看那些让人印象深刻的Web图形与图象！</li>
+		</ol>
+		
+		<hr><h2>表格</h2>
+		<br>table th(header头) tr(row行) td(column列)
+		<div>
+			<table border=“1” width="300">
+				<tr>
+					<th>列一</th>
+					<th>列二</th>
+				</tr>
+				<tr style="text-align:center">
+					<td>AA</td>
+					<td>BB</td>
+					<td>CC</td>
+					<td>DD</td>
+					<td>EE</td>
+					
+				</tr>
+				<tr style="text-align:right" border = "0">
+					<td>第三行</td>
+					<td>我喜欢</td>
+					<td>右对齐</td>
+				
+				</tr>
+				
+			</table>
+		</div>
+		<h1>作业</h1> <h2>table img建相册 整齐呈现多幅图片</h2>
+		<h2> 电子书网站。有导航（结构清楚）。点击图片跳转目录页。点击目录跳转内容页<br>合理使用颜色图象修饰</h2>
+		
+		
 </body>
 </html>
