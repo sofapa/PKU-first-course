@@ -1,5 +1,6 @@
 <!DOCTYPE 	html>
 <html>
+<-- 旭亮-->
 <head>
 	<title></title>
 	<meta charset = "utf-8" />
@@ -41,7 +42,8 @@
 	<h1 style="text-align:left;">LEFT</h1>
 	<h1 style="text-align:right;">RIGHT</h1>
 	<h1 style="text-align:center;">CENTER</h1>
-	<h1 style="text-align:justify;">JUSTIFY && TWO</h1>
+	<h1 style="text-align:justify;">JUSTIFY && TWO  很多浏览器不支持</h1>
 	<hr/>
+	
 </body>
 </html>
