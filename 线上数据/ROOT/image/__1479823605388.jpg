@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.netease.course.dao.PersonMapper">
+	<select id="queryPersonByUserName" resultType="com.netease.course.entity.Person" parameterType="String">
+		select * from	webapp.person where userName=#{userName}
+	</select>
+	<select id="queryPersonByUserNameAndPassword" resultType="Person">
+		select * from webapp.person where
+		userName=#{userName} AND password = #{password}
+	</select>
+
+	<insert id="savePerson" parameterType="Person" useGeneratedKeys="true" keyColumn="id" keyProperty="id">
+		INSERT INTO `webapp`.`person` (
+		`id`,
+		`userName`,
+		`password`,
+		`nickName`,
+		`userType`
+		)
+		VALUES
+		(
+		NULL,
+		#{userName},
+		#{password},
+		#{nickName},
+		#{userType}
+		);
+
+	</insert>
+	
+	<update id="updatePerson" parameterType="Person">
+		update webapp.person
+		set
+			userName = #{userName},
+			password = #{password},
+			nickName = #{nickName},
+			userType = #{userType}
+		where 
+			userName = #{userName}
+	</update>
+	
+	<delete id="deletePersonById" parameterType="int">
+		delete from webapp.person where id = #{id}
+	</delete>
+	<!-- public Person queryPersonByUserName(String UserName); 
+		public Person 	queryPersonByUserNameAndPassword(String UserName, String Password); 
+		public void savePerson(Person person); 
+		public void updatePerson(Person person); 
+		public void deletePersonById(int id); -->
+</mapper>
